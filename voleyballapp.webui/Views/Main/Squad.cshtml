@@ -1,0 +1,164 @@
+@model TeamPlayersModel
+
+@section CSS
+{
+    <style>
+    .container-squad
+    {
+      width: 100% !important;
+      height: 1000px;
+      background: url(/images/Squad/court.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+     
+    }
+
+    .mid-row {
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    
+    }
+    .bot-row
+    {
+      text-align: center;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 150px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+
+    .img-fluid
+    {
+        border-radius: 50%;
+    }
+    </style>
+}
+<style>
+    .container-squad
+    {
+      width: 100% !important;
+      height: 1000px;
+      background: url(/images/Squad/court.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+     
+    }
+
+    .mid-row {
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    
+    }
+    .bot-row
+    {
+      text-align: center;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 150px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+
+    .img-fluid
+    {
+        border-radius: 50%;
+    }
+    </style>
+<div class="container" style="max-width: 2000px;">
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="header-title pb-3 mt-0">@ViewBag.Team.Name</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr class="align-self-center">
+                                    <th style="width: 200px;">Player Name</th>
+                                    <th>Nation</th>
+                                    <th>Position</th>
+                                    <th>Height</th>
+                                    <th>Weight</th>
+                                    <th>Number</th>
+                                    <th>Spike</th>
+                                    <th>Block</th>
+                                    <th>Reception</th>
+                                    <th>Attack</th>
+                                    <th>Serve</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                    @foreach (var player in @Model.TeamPlayers)
+                                    {
+                                    <tr>
+                                    <td><img src="@player.imgUrl" width="50" alt="" class="thumb-sm rounded-circle mr-2"> @player.Name</td>
+                                    <td>
+                                         @player.Nation.Name
+                                    </td>
+                                    <td>@player.Position</td>
+                                    <td>@player.PlayerStats.Height</td>
+                                    <td>@player.PlayerStats.Weight</td>
+                                    <td>@player.PlayerStats.Number</td>
+                                    <td>@player.PlayerStats.Spike</td>
+                                    <td>@player.PlayerStats.Block</td>
+                                    <td>@player.PlayerStats.Reception</td>
+                                    <td>@player.PlayerStats.Attack</td>
+                                    <td>@player.PlayerStats.Serve</td>
+                                    <td>@player.PlayerStats.Price</td>
+                                    @* <td><span class="badge badge-boxed badge-soft-primary">Success</span></td> *@
+                                    </tr>
+                                    }
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--end table-responsive-->
+                    <div class="pt-3 border-top text-right"><a href="#" class="text-primary">View all <i class="mdi mdi-arrow-right"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="container-squad my-5" >
+                <div class="mid-row">
+                    @for (int i = 0; i < 3; i++)
+                    {    
+                    <div class="col-md-4">
+                        <img class="img-fluid" width="60" src="@Model.TeamPlayers[i].imgUrl" alt="">
+                    </div>
+                    }
+                </div>
+                <div class="bot-row">
+                    @for (int i = 3; i < 6; i++)
+                    {    
+                    <div class="col-md-4">
+                        <img class="img-fluid" width="60" src="@Model.TeamPlayers[i].imgUrl" alt="">
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

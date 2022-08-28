@@ -1,0 +1,18 @@
+.match-history
+{
+    display: inline-block;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    
+}
+
+.win
+{
+    background-color: green;
+}
+
+.lose
+{
+    background-color: red;
+}

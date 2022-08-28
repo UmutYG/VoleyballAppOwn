@@ -1,0 +1,99 @@
+@model UserInfoModel
+
+@section CSS
+{
+<link rel="stylesheet" href="~/css/main_page/style.css">
+<style>
+  @* body{background-color: gray;} *@
+</style>
+}
+
+@await Html.PartialAsync("_navbar")
+<div class="text-center">
+  <p style="font-size: 30px; color: red; font-weight: 700;">Next Match</p>
+</div>
+<div class="row inc-match mt-5">
+  <div class="col-md-5 text-center">
+    <img src="@Model.TeamInfo.img" width="150" alt="">
+    <div class="info">
+      <p class="manager-infos" style="color: black;">@User.Identity.Name</p>
+      <p class="manager-infos">Manager Point : 200</p>
+      <div class="last-3-matches">
+        <span class="match-history win">W</span>
+        <span class="match-history win">W</span>
+        <span class="match-history win">W</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2 text-center">
+    <p style="font-size: 40px; color: #fff; font-weight: 700;">VS</p>
+  </div>
+  <div class="col-md-5 text-center">
+    <img src="@(Model.FixtureTeams[1].TeamId == @Model.TeamInfo.TeamId ? Model.FixtureTeams[0].img :Model.FixtureTeams[1].img)" width="150"  alt="">
+    <div class="info">
+      <p class="manager-infos" style="color: black;">@Model.FixtureTeams[1].Name</p>
+      <p class="manager-infos">Manager Point : 200</p>
+      <div class="last-3-matches">
+        <span class="match-history win">W</span>
+        <span class="match-history win">W</span>
+        <span class="match-history lose">L</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="line"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+         <div class="line-up rounded bottom-parts">
+          <a class="text-light" href="">Line-Ups</a>
+          <p class="text-light" href="">Manage Your Team</p>
+         </div>
+         <div class="negotiations bottom-parts">
+          <a class="text-light" href="">Negotiations</a>
+         </div>
+    </div>
+    <div class="col-md-4">
+       <div class="league-table bottom-parts">
+            <a class="text-light" href="/main/squad">League Table</a>
+             <div class="widget-next-match">
+              <table class="table custom-table">
+                <thead>
+                  <tr>
+                    <th>P</th>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>PTS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (int i = 0; i < 4; i++)
+                  {
+                    <tr>
+                    <td>1</td>
+                    <td><strong class="text-white">@ViewBag.Teams[i].Name</strong></td>
+                    <td>22</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>140</td>
+                  </tr>
+                  }
+                  
+                </tbody>
+              </table>
+            </div>
+       </div>
+    </div>
+    <div class="col-md-4">
+         <div class="training bottom-parts">
+          <a class="text-light" href="">Training</a>
+         </div>
+         <div class="friendlies bottom-parts">
+           <a class="text-light" href="">Friendlies</a>
+         </div>
+    </div>
+  </div>
+</div>

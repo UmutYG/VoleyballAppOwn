@@ -1,0 +1,17 @@
+C:\Users\umut_\Desktop\VoleyballApp\voleyballapp.entity\bin\Debug\netstandard2.0\voleyballapp.entity.deps.json
+C:\Users\umut_\Desktop\VoleyballApp\voleyballapp.entity\bin\Debug\netstandard2.0\voleyballapp.entity.dll
+C:\Users\umut_\Desktop\VoleyballApp\voleyballapp.entity\bin\Debug\netstandard2.0\voleyballapp.entity.pdb
+C:\Users\umut_\Desktop\VoleyballApp\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.csprojAssemblyReference.cache
+C:\Users\umut_\Desktop\VoleyballApp\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.AssemblyInfoInputs.cache
+C:\Users\umut_\Desktop\VoleyballApp\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.AssemblyInfo.cs
+C:\Users\umut_\Desktop\VoleyballApp\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.dll
+C:\Users\umut_\Desktop\VoleyballApp\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.pdb
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\bin\Debug\netstandard2.0\voleyballapp.entity.deps.json
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\bin\Debug\netstandard2.0\voleyballapp.entity.dll
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\bin\Debug\netstandard2.0\voleyballapp.entity.pdb
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.csprojAssemblyReference.cache
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.AssemblyInfoInputs.cache
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.AssemblyInfo.cs
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.dll
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.pdb
+C:\Users\umut_\Desktop\VoleyballAppOwn\voleyballapp.entity\obj\Debug\netstandard2.0\voleyballapp.entity.csproj.CoreCompileInputs.cache

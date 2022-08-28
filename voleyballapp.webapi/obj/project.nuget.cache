@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9xEbY2fdRKiC7Rushl3NX/0EtoR81tl5YvNl+tenxeKgJVTNaWcRnBDXTL+fFoSI7qWYC84nvV0x3CwGH2UvIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\umut_\\Desktop\\VoleyballApp\\voleyballapp.webapi\\voleyballapp.webapi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\umut_\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
